@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class IntroFunction
+{
+    public static void main(String args[])
+    {
+        String studentList[]={"Aman","Akbar","Anthony"};
+        printStudentList(studentList);
+    }
+    public static void printStudentList(String students[])
+    {
+        for(String s:students)
+        {
+            System.out.println(s);
+        }
+    }
+    class Student
+    {
+        private final String name;
+        private final int rollNumber;
+        public Student(String name,int rollNumber)
+        {
+            this.rollNumber=rollNumber;
+            this.name=name;
+        }
+        public String getDetails()
+        {
+            return this.name+" "+this.rollNumber;
+        }
+    }
+}
